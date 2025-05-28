@@ -16,13 +16,14 @@ end
 
 local SpringGetUnitPosition = Spring.GetUnitPosition
 
--- @description: Computes a landing point 250 units backwards from given target position
+-- @description: Computes a landing point 500 units backwards from given target position
 -- @argument atlasID [number] - ID atlas
 -- @argument targetPos [table] - Vec3-like {x, y, z}
--- @return atlasPoint [table] - position 250 units before targetPos on previous trajectory
+-- @return atlasPoint [table] - position 500 units before targetPos on previous trajectory
 return function(atlasID, targetPos)
+  -- Spring.Echo("Hello, atlasID: ", atlasID)
   if not atlasID or not targetPos then return nil end
-
+  --Spring.Echo("Hello, atlasID: ", atlasID)
   local sx, sy, sz = Spring.GetUnitPosition(atlasID)
   if not sx then return nil end
   
@@ -42,11 +43,11 @@ return function(atlasID, targetPos)
   local normY = dy / length
   local normZ = dz / length
 
-  -- Krok zpět o 250 bodů
-  local backX = ex - normX * 250
-  local backY = ey - normY * 250
-  local backZ = ez - normZ * 250
-  Spring.Echo("backX: ", backX, " backY: ", backY, " backZ: ", backZ)
+  -- Krok zpět o 500 bodů
+  local backX = ex - normX * 500
+  local backY = ey - normY * 500
+  local backZ = ez - normZ * 500
+  -- Spring.Echo("backX: ", backX, " backY: ", backY, " backZ: ", backZ)
 
   return { x = backX, y = backY, z = backZ }
 end
