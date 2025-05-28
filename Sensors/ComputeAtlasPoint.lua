@@ -2,7 +2,7 @@ local sensorInfo = {
   name = "ComputeAtlasPoint",
   desc = "Compute atlas landing point based on previous trajectory",
   author = "MajdaT_ChatGPT",
-  date = "2025-05-13",
+  date = "2025-05-27",
   license = "none"
 }
 
@@ -16,36 +16,37 @@ end
 
 local SpringGetUnitPosition = Spring.GetUnitPosition
 
--- @description: Computes a landing point 250 units backwards from safeArea along trajectory
+-- @description: Computes a landing point 250 units backwards from given target position
 -- @argument atlasID [number] - ID atlas
--- @argument safeArea [table] - table { center = {x, y, z}, radius = number }
--- @return atlasPoint [table] - position of arrive (250 points before safeArea)
-return function(atlasID, safeArea)
-  -- if not atlasID or not safeArea or not safeArea.center then return nil end
-  -- Spring.Echo("atlasID: ", atlasID, " safeArea.center: ", safeArea.center, " safeArea.radius: ", safeArea.radius)
-  return {safeArea.center} end
+-- @argument targetPos [table] - Vec3-like {x, y, z}
+-- @return atlasPoint [table] - position 250 units before targetPos on previous trajectory
+return function(atlasID, targetPos)
+  if not atlasID or not targetPos then return nil end
 
-  -- local sx, sy, sz = SpringGetUnitPosition(atlasID)
-  -- if not sx then return nil end
-
-  -- local ex, ey, ez = safeArea.center.x, safeArea.center.y, safeArea.center.z
+  local sx, sy, sz = Spring.GetUnitPosition(atlasID)
+  if not sx then return nil end
+  
+  local ex = targetPos.x or targetPos[1]
+  local ey = targetPos.y or targetPos[2]
+  local ez = targetPos.z or targetPos[3]
 
   -- Vektor směru letu
-  -- local dx = ex - sx
-  -- local dy = ey - sy
-  -- local dz = ez - sz
+  local dx = ex - sx
+  local dy = ey - sy
+  local dz = ez - sz
 
-  -- local length = math.sqrt(dx*dx + dy*dy + dz*dz)
-  -- if length == 0 then return nil end
+  local length = math.sqrt(dx*dx + dy*dy + dz*dz)
+  if length == 0 then return nil end
 
-  -- local normX = dx / length
-  -- local normY = dy / length
-  -- local normZ = dz / length
+  local normX = dx / length
+  local normY = dy / length
+  local normZ = dz / length
 
   -- Krok zpět o 250 bodů
-  -- local backX = ex - normX * 250
-  -- local backY = ey - normY * 250
-  -- local backZ = ez - normZ * 250
+  local backX = ex - normX * 250
+  local backY = ey - normY * 250
+  local backZ = ez - normZ * 250
+  Spring.Echo("backX: ", backX, " backY: ", backY, " backZ: ", backZ)
 
-  -- return { backX, backY, backZ }
--- end
+  return { x = backX, y = backY, z = backZ }
+end
