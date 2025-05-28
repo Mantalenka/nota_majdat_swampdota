@@ -1,0 +1,102 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"KlhM8tTTXIycYKPyfICVGruTg7QCsOAT": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 234,
+			"y": -2
+		},
+		"Q6iFKeeuC3c9kNm9N01hij0lSO83h1V7": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 532,
+			"y": 9
+		},
+		"WpTgNwTS3FnXxWKxXk1gWVES9vzxZxAn": {
+			"height": 130,
+			"title": "reference",
+			"width": 444,
+			"x": 745,
+			"y": 21
+		},
+		"ftXv7zLHffHikupauWclKYuhCAKECuWU": {
+			"height": 54,
+			"title": "success_only_one_move_box_of_death",
+			"width": 336,
+			"x": 476,
+			"y": 155
+		},
+		"u9QIKDZzlIcbDx0LmAlNzxbVkN0ZAwUt": {
+			"height": 103,
+			"title": "store_position_for_box",
+			"width": 286,
+			"x": 728,
+			"y": -142
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "u9QIKDZzlIcbDx0LmAlNzxbVkN0ZAwUt",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "staticPosition"
+				}, {
+					"name": "value",
+					"value": "Vec3(4334,14,4664)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "WpTgNwTS3FnXxWKxXk1gWVES9vzxZxAn",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
+				} ],
+				"referenceInputs": [ {
+					"name": "position_for_box",
+					"value": "staticPosition"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "Q6iFKeeuC3c9kNm9N01hij0lSO83h1V7",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "ftXv7zLHffHikupauWclKYuhCAKECuWU",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "KlhM8tTTXIycYKPyfICVGruTg7QCsOAT",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "not staticPosition"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

@@ -22,6 +22,10 @@ Ensures clean delivery and repositioning without redundant waiting.
 Find one idle atlas and box nearest metal storage and moved tu target position
 - argument: position_for_box (position)
 
+* MoveBoxOfDeath_toStaticPredefinedPosition
+
+Predefine static position for box (store) and use find_atlas_and_box_then_move 
+
 
 Commands
 ---
