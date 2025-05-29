@@ -32,7 +32,7 @@
 		},
 		"ftXv7zLHffHikupauWclKYuhCAKECuWU": {
 			"height": 54,
-			"title": "success_only_one_move_box_of_death",
+			"title": "success_only_one_move_seer",
 			"width": 336,
 			"x": 476,
 			"y": 155
@@ -60,7 +60,7 @@
 					"value": "staticPosition"
 				}, {
 					"name": "value",
-					"value": "Vec3(4334,14,4664)"
+					"value": "Vec3(4708,41,4051)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -79,7 +79,7 @@
 					"value": "staticPosition"
 				}, {
 					"name": "type_of_unit",
-					"value": "\"armbox\""
+					"value": "\"armseer\""
 				} ],
 				"referenceOutputs": []
 			} ],

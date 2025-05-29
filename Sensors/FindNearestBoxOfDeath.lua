@@ -1,6 +1,6 @@
 local sensorInfo = {
   name = "FindNearestBoxOfDeath",
-  desc = "Finds the closest armbox unit to any armmstor unit owned by the current team",
+  desc = "Finds the closest type_of_unit unit to any armmstor unit owned by the current team",
   author = "MajdaT + CodeCopilot",
   date = "2025-05-28",
   license = "notAlicense"
@@ -19,7 +19,7 @@ local SpringGetUnitDefID = Spring.GetUnitDefID
 local SpringGetUnitPosition = Spring.GetUnitPosition
 local myTeamID = Spring.GetMyTeamID
 
-return function()
+return function(type_of_unit)
   local units = SpringGetTeamUnits(myTeamID())
 
   local boxUnits = {}
@@ -29,7 +29,7 @@ return function()
     local unitID = units[i]
     local defID = SpringGetUnitDefID(unitID)
     local defName = UnitDefs[defID].name
-    if defName == "armbox" then
+    if defName == type_of_unit then
       boxUnits[#boxUnits+1] = unitID
     elseif defName == "armmstor" then
       storageUnits[#storageUnits+1] = unitID

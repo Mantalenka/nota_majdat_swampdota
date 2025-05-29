@@ -1,0 +1,178 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
+			"height": 92,
+			"title": "store_only_one_use_this_tree",
+			"width": 273,
+			"x": 743,
+			"y": -226
+		},
+		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
+			"height": 54,
+			"title": "success_only_one_use_this_tree",
+			"width": 292,
+			"x": 515,
+			"y": 274
+		},
+		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
+			"height": 130,
+			"title": "reference",
+			"width": 340,
+			"x": 740,
+			"y": -112
+		},
+		"Oykj1xp2xaorpuOaH1HZPEkT4slAxKle": {
+			"height": 73,
+			"title": "wait_the_first_atlas_must_start_moving",
+			"width": 344,
+			"x": 1161,
+			"y": 144
+		},
+		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 230,
+			"y": -2
+		},
+		"g03gIZ9L21lW0isQzSCtW05zRgnoM2qe": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 962,
+			"y": 183
+		},
+		"lU3Imfw1po3xp9y7wdsfhnPWGa3B6h6G": {
+			"height": 110,
+			"title": "reference",
+			"width": 527,
+			"x": 998,
+			"y": 11
+		},
+		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 514,
+			"y": 9
+		},
+		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 712,
+			"y": 112
+		},
+		"xDyxIcJGgdQkJQnPN0jwoZY4PbD2YLVy": {
+			"height": 110,
+			"title": "reference",
+			"width": 480,
+			"x": 1151,
+			"y": 229
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "55BC57mlLnzokFKaRZf4ykj3nqKtzXDW",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "x"
+				}, {
+					"name": "value",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.buy_unit_safely"
+				} ],
+				"referenceInputs": [ {
+					"name": "type_of_unit",
+					"value": "\"armseer\""
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "lU3Imfw1po3xp9y7wdsfhnPWGa3B6h6G",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_majdat_swampdota.MoveBoxOfDeath_toStaticPredefinedPosition"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "Oykj1xp2xaorpuOaH1HZPEkT4slAxKle",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 2
+						} ]
+					}, {
+						"children": [],
+						"id": "xDyxIcJGgdQkJQnPN0jwoZY4PbD2YLVy",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.MoveSeer_toStaticPredefinedPosition"
+						} ],
+						"referenceInputs": [],
+						"referenceOutputs": []
+					} ],
+					"id": "g03gIZ9L21lW0isQzSCtW05zRgnoM2qe",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "not x"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}
