@@ -35,7 +35,7 @@
 		"56IuWQYSAVTcrnIplor9SbYwJab0D92i": {
 			"height": 100,
 			"title": "store",
-			"width": 552,
+			"width": 592,
 			"x": 949,
 			"y": -82
 		},
@@ -175,7 +175,7 @@
 					"value": "atlasPoint"
 				}, {
 					"name": "value",
-					"value": "nota_majdat_swampdota.ComputeAtlasPoint(atlasID[1], position_for_box)"
+					"value": "nota_majdat_swampdota.ComputeAtlasPoint(atlasID[1], position_for_box, 1200)"
 				}, {
 					"name": "scriptName",
 					"value": "store"

@@ -9,75 +9,103 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
+		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
+			"height": 130,
+			"title": "reference",
+			"width": 340,
+			"x": 747,
+			"y": -114
+		},
 		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
 			"height": 92,
 			"title": "store_only_one_use_this_tree",
 			"width": 273,
-			"x": 743,
-			"y": -226
+			"x": 737,
+			"y": -349
 		},
 		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
 			"height": 54,
 			"title": "success_only_one_use_this_tree",
 			"width": 292,
-			"x": 515,
+			"x": 511,
 			"y": 274
+		},
+		"MJ2xErjzSlk1dwmPgyZP5SzEpk67D822": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1375,
+			"y": 155
 		},
 		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
 			"height": 130,
 			"title": "reference",
 			"width": 340,
-			"x": 740,
-			"y": -112
+			"x": 738,
+			"y": -243
 		},
-		"Oykj1xp2xaorpuOaH1HZPEkT4slAxKle": {
-			"height": 73,
-			"title": "wait_the_first_atlas_must_start_moving",
-			"width": 344,
-			"x": 1161,
-			"y": 144
+		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
+			"height": 151,
+			"title": "reference",
+			"width": 444,
+			"x": 1253,
+			"y": 487
 		},
 		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 230,
+			"x": 231,
 			"y": -2
 		},
-		"g03gIZ9L21lW0isQzSCtW05zRgnoM2qe": {
+		"TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 962,
-			"y": 183
-		},
-		"lU3Imfw1po3xp9y7wdsfhnPWGa3B6h6G": {
-			"height": 110,
-			"title": "reference",
-			"width": 527,
 			"x": 998,
-			"y": 11
+			"y": 224
+		},
+		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
+			"height": 151,
+			"title": "reference",
+			"width": 444,
+			"x": 1150,
+			"y": -6
+		},
+		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
+			"height": 83,
+			"title": "wait",
+			"width": 153,
+			"x": 1270,
+			"y": 406
+		},
+		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1017,
+			"y": 479
 		},
 		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 514,
+			"x": 510,
 			"y": 9
 		},
 		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 712,
+			"x": 707,
 			"y": 112
 		},
-		"xDyxIcJGgdQkJQnPN0jwoZY4PbD2YLVy": {
-			"height": 110,
+		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
+			"height": 151,
 			"title": "reference",
-			"width": 480,
-			"x": 1151,
-			"y": 229
+			"width": 444,
+			"x": 1296,
+			"y": 221
 		}
 	},
 	"roles": [ {
@@ -115,20 +143,39 @@
 				} ],
 				"referenceOutputs": []
 			}, {
+				"children": [],
+				"id": "3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.buy_unit_safely"
+				} ],
+				"referenceInputs": [ {
+					"name": "type_of_unit",
+					"value": "\"armbox\""
+				} ],
+				"referenceOutputs": []
+			}, {
 				"children": [ {
 					"children": [],
-					"id": "lU3Imfw1po3xp9y7wdsfhnPWGa3B6h6G",
+					"id": "YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq",
 					"nodeType": "reference",
 					"parameters": [ {
 						"name": "behaviourName",
-						"value": "nota_majdat_swampdota.MoveBoxOfDeath_toStaticPredefinedPosition"
+						"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
 					} ],
-					"referenceInputs": [],
+					"referenceInputs": [ {
+						"name": "position_for_box",
+						"value": "Vec3(4683,17,4425)"
+					}, {
+						"name": "type_of_unit",
+						"value": "\"armbox\""
+					} ],
 					"referenceOutputs": []
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "Oykj1xp2xaorpuOaH1HZPEkT4slAxKle",
+						"id": "MJ2xErjzSlk1dwmPgyZP5SzEpk67D822",
 						"nodeType": "wait",
 						"parameters": [ {
 							"name": "time",
@@ -136,16 +183,51 @@
 						} ]
 					}, {
 						"children": [],
-						"id": "xDyxIcJGgdQkJQnPN0jwoZY4PbD2YLVy",
+						"id": "vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL",
 						"nodeType": "reference",
 						"parameters": [ {
 							"name": "behaviourName",
-							"value": "nota_majdat_swampdota.MoveSeer_toStaticPredefinedPosition"
+							"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
 						} ],
-						"referenceInputs": [],
+						"referenceInputs": [ {
+							"name": "position_for_box",
+							"value": "Vec3(4708,41,4051)"
+						}, {
+							"name": "type_of_unit",
+							"value": "\"armseer\""
+						} ],
 						"referenceOutputs": []
 					} ],
-					"id": "g03gIZ9L21lW0isQzSCtW05zRgnoM2qe",
+					"id": "TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 4
+						} ]
+					}, {
+						"children": [],
+						"id": "PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
+						} ],
+						"referenceInputs": [ {
+							"name": "position_for_box",
+							"value": "Vec3(5620,45,5560)"
+						}, {
+							"name": "type_of_unit",
+							"value": "\"armbox\""
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "miS1d6kP18Lh3T73tLVwEKKcYke7MNwp",
 					"nodeType": "sequence",
 					"parameters": []
 				} ],

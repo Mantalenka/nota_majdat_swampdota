@@ -15,12 +15,19 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"24deCeuvaxIGqsFeZFwt2Pcv2GBLN0oJ": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 1497,
+			"y": 151
+		},
 		"4Cp2qZeLtCtcZXUbeaNa4IRZS1UH8ya9": {
 			"height": 94,
 			"title": "store",
 			"width": 379,
-			"x": 964,
-			"y": -122
+			"x": 2085,
+			"y": 118
 		},
 		"5vLNLKtHNyxnojoZVDsf3KTzfyFBreLe": {
 			"height": 90,
@@ -28,6 +35,13 @@
 			"width": 274,
 			"x": 965,
 			"y": 101
+		},
+		"75TB7h4YxnJ7c2awHLwCOmdUldyKJM6X": {
+			"height": 72,
+			"title": "waitUntil",
+			"width": 186,
+			"x": 1794,
+			"y": 214
 		},
 		"80sbnvVVs0euI2A6pyDbNM7nDO6eNYfb": {
 			"height": 55,
@@ -40,8 +54,22 @@
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1434,
-			"y": 59
+			"x": 1632,
+			"y": 62
+		},
+		"M8YFFUpCiJoG2QsWYE67NRdpXsmA5kYM": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1799,
+			"y": 130
+		},
+		"XngbVVJbRexKabIEH4SVjZm0DX2aHC9w": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1312,
+			"y": 269
 		},
 		"XsBBGzYHeFcztyND72bl0rymSSRj7LGz": {
 			"height": 60,
@@ -54,15 +82,15 @@
 			"height": 172,
 			"title": "reference",
 			"width": 371,
-			"x": 1314,
-			"y": 110
+			"x": 1568,
+			"y": 325
 		},
 		"e2ObCkPZnl9MR8bARSXOQsdpa9cxqiGl": {
 			"height": 94,
 			"title": "store",
 			"width": 491,
-			"x": 953,
-			"y": -16
+			"x": 948,
+			"y": -81
 		},
 		"m3Jlit93mJuIIvt7t62uwiXXFJuhnhOj": {
 			"height": 90,
@@ -79,21 +107,6 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [],
-				"id": "4Cp2qZeLtCtcZXUbeaNa4IRZS1UH8ya9",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "atlasID"
-				}, {
-					"name": "value",
-					"value": "nota_majdat_swampdota.FindIdleAtlas()"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
 				"children": [],
 				"id": "e2ObCkPZnl9MR8bARSXOQsdpa9cxqiGl",
 				"nodeType": "luaCommand",
@@ -115,30 +128,75 @@
 					"nodeType": "failure",
 					"parameters": []
 				}, {
-					"children": [],
-					"id": "aJcPCkaKfU33OuqKYAUZuyD22B5TUz8d",
-					"nodeType": "reference",
-					"parameters": [ {
-						"name": "behaviourName",
-						"value": "nota_majdat_swampdota.OneWayBoxDelivery"
-					} ],
-					"referenceInputs": [ {
-						"name": "position_for_box",
-						"value": "position_for_box"
+					"children": [ {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "4Cp2qZeLtCtcZXUbeaNa4IRZS1UH8ya9",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "atlasID"
+								}, {
+									"name": "value",
+									"value": "nota_majdat_swampdota.FindIdleAtlas()"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							} ],
+							"id": "M8YFFUpCiJoG2QsWYE67NRdpXsmA5kYM",
+							"nodeType": "repeat",
+							"parameters": []
+						}, {
+							"children": [],
+							"id": "75TB7h4YxnJ7c2awHLwCOmdUldyKJM6X",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "condition",
+								"value": "atlasID ~= 0"
+							}, {
+								"name": "scriptName",
+								"value": "waitUntil"
+							} ],
+							"scriptName": "waitUntil"
+						} ],
+						"id": "24deCeuvaxIGqsFeZFwt2Pcv2GBLN0oJ",
+						"nodeType": "parallel",
+						"parameters": [ {
+							"name": "mode",
+							"value": "any-success"
+						} ]
 					}, {
-						"name": "atlasID",
-						"value": "atlasID"
-					}, {
-						"name": "box_of_deathID",
-						"value": "box_of_deathID"
+						"children": [],
+						"id": "aJcPCkaKfU33OuqKYAUZuyD22B5TUz8d",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.OneWayBoxDelivery"
+						} ],
+						"referenceInputs": [ {
+							"name": "position_for_box",
+							"value": "position_for_box"
+						}, {
+							"name": "atlasID",
+							"value": "atlasID"
+						}, {
+							"name": "box_of_deathID",
+							"value": "box_of_deathID"
+						} ],
+						"referenceOutputs": []
 					} ],
-					"referenceOutputs": []
+					"id": "XngbVVJbRexKabIEH4SVjZm0DX2aHC9w",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
 				"id": "5vLNLKtHNyxnojoZVDsf3KTzfyFBreLe",
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "atlasID == 0 or box_of_deathID == 0"
+					"value": "box_of_deathID == 0"
 				}, {
 					"name": "repeat",
 					"value": "false"
