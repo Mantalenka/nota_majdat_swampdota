@@ -9,102 +9,137 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
+		"0M8Le5bSGQlRNz2bNqGdRnrZaFLKdrUy": {
+			"height": 94,
+			"title": "nota_mestek_labs.collectMetal",
+			"width": 368,
+			"x": 1216,
+			"y": 876
+		},
 		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 747,
+			"x": 742,
 			"y": -114
 		},
 		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
 			"height": 92,
 			"title": "store_only_one_use_this_tree",
 			"width": 273,
-			"x": 737,
+			"x": 732,
 			"y": -349
+		},
+		"8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU": {
+			"height": 152,
+			"title": "reference",
+			"width": 405,
+			"x": 1220,
+			"y": 668
+		},
+		"AnmanToKkDiNK9EelJQDqvRDc8ghEQiC": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 751,
+			"y": 704
 		},
 		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
 			"height": 54,
 			"title": "success_only_one_use_this_tree",
 			"width": 292,
-			"x": 511,
+			"x": 507,
 			"y": 274
 		},
 		"MJ2xErjzSlk1dwmPgyZP5SzEpk67D822": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1374,
+			"x": 1368,
 			"y": 155
 		},
 		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 738,
+			"x": 733,
 			"y": -243
 		},
 		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1252,
+			"x": 1247,
 			"y": 487
 		},
 		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 231,
+			"x": 230,
 			"y": -2
 		},
 		"TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 998,
+			"x": 993,
 			"y": 224
 		},
 		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1149,
+			"x": 1144,
 			"y": -6
+		},
+		"gvAKil1jBGXLfgEglT0x71ExHKfBhtmh": {
+			"height": 72,
+			"title": "wait_for_fark_exist",
+			"width": 201,
+			"x": 1235,
+			"y": 811
 		},
 		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
 			"height": 83,
 			"title": "wait",
 			"width": 153,
-			"x": 1269,
+			"x": 1264,
 			"y": 406
+		},
+		"lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 958,
+			"y": 702
 		},
 		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1017,
+			"x": 1012,
 			"y": 479
 		},
 		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 510,
+			"x": 506,
 			"y": 9
 		},
 		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 707,
+			"x": 702,
 			"y": 112
 		},
 		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1294,
+			"x": 1288,
 			"y": 221
 		}
 	},
@@ -252,6 +287,55 @@
 					"name": "mode",
 					"value": "all-success"
 				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.find_unit_in_base_or_buy"
+						} ],
+						"referenceInputs": [ {
+							"name": "type_of_unit",
+							"value": "\"armfark\""
+						} ],
+						"referenceOutputs": [ {
+							"name": "unitID",
+							"value": "farkID"
+						} ]
+					}, {
+						"children": [],
+						"id": "gvAKil1jBGXLfgEglT0x71ExHKfBhtmh",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 2
+						} ]
+					}, {
+						"children": [],
+						"id": "0M8Le5bSGQlRNz2bNqGdRnrZaFLKdrUy",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "farckIDs",
+							"value": "{farkID}"
+						}, {
+							"name": "area",
+							"value": "{center = Vec3(5000,40,5000), radius = 1300}"
+						}, {
+							"name": "scriptName",
+							"value": "nota_mestek_labs.collectMetal"
+						} ],
+						"scriptName": "nota_mestek_labs.collectMetal"
+					} ],
+					"id": "lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "AnmanToKkDiNK9EelJQDqvRDc8ghEQiC",
+				"nodeType": "repeat",
+				"parameters": []
 			} ],
 			"id": "o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk",
 			"nodeType": "sequence",

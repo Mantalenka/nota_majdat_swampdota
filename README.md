@@ -35,17 +35,35 @@ Check if the player has enough metal and if so, use hlaa_nota_zivnusmEXAM.buyUni
 - argument: only_one (variable, boolean)		- if true is only one use this behaviour (this node) in all project
 
 
+* find_unit_in_base_or_buy
+Use FindIdleUnitInBase, if not exist buy unit
+- argument: type_of_unit
+- return(output): unitID
+
+
 * MoveBoxOfDeath_toStaticPredefinedPosition
 
 Predefine static position for box (store) and use find_atlas_and_box_then_move 
+
 
 * MoveSeer_toStaticPredefinedPosition
 
 Predefine static position for seer (store) and use find_atlas_and_box_then_move 
 
+
 * root
 
-Runs all relevant trees
+Runs all relevant trees, in this order:
+> buy 1 armseer (use buy_unit_safely)
+> buy 1 armbox  (use buy_unit_safely)
+> parallel - all succes:
+>> move one (random) armbox (use find_atlas_and_box_then_move)
+>> move one (random) armseer (use find_atlas_and_box_then_move)
+>> move one (random) armbox (use find_atlas_and_box_then_move)
+> repeat:
+>> find or buy armfark (use find_unit_in_base_or_buy)
+>> nota_mestek_labs.collectMetal (go to fight, and collect metal, if he died -> buy new fark and repeat)
+
 
 * root_automatickly
 
@@ -74,6 +92,7 @@ Calculates the return of the atlas back along its original trajectory by <distan
 
 * FindIdleAtlas
 
+
 * FindNearestBoxOfDeath
 
 Find type_of_unit (in version 1.0 only box_of_death) and move this unit.
@@ -91,6 +110,7 @@ Find unit in base (is z left down corner (x > 249 and x < 2513) & (z > 7640 and 
 
 convert to Array (Number or Array with only one number (1 = number),
 because manually entering the position generates an array of one element)
+
 
 * DefinitionOfPositionForAllUnits
 
