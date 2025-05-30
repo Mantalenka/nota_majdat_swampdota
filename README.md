@@ -1,4 +1,4 @@
-nota_majdat_swampdota	3.0
+nota_majdat_swampdota 4.0.0
 ====
 
 * [dependencies](./dependencies.json)
@@ -16,6 +16,7 @@ In behaviour use this nodes: nota_kahlan_ttdr.loadUnit, nota_kahlan_ttdr.moveUni
 - argument: position_for_box (position)
 - argument: atlasID (UnitID)
 - argument: box_of_deathID (UnitID)
+- argument: only_one (variable, boolean)		- if true is only one use this behaviour (this node) in all project
 
 
 * find_atlas_and_box_then_move
@@ -24,12 +25,14 @@ Find one idle atlas and type_of_unit (in version 1.0 only box_of_death) nearest 
 if there is no idle atlas, it will wait for it
 - argument: position_for_box (position)
 - argument: type_of_unit (variable, string)
+- argument: only_one (variable, boolean)		- if true is only one use this behaviour (this node) in all project
 
 
 * buy_unit_safely
 
 Check if the player has enough metal and if so, use hlaa_nota_zivnusmEXAM.buyUnit
 - argument: type_of_unit (variable, string)
+- argument: only_one (variable, boolean)		- if true is only one use this behaviour (this node) in all project
 
 
 * MoveBoxOfDeath_toStaticPredefinedPosition
@@ -43,6 +46,14 @@ Predefine static position for seer (store) and use find_atlas_and_box_then_move
 * root
 
 Runs all relevant trees
+
+* root_automatickly
+
+Implement "while cyklus" from elements in table (generate by DefinitionOfPositionForAllUnits)
+item in table is numbering tables: 1 = {"variant = "type_of_unit", position = Vec3(position_x, position_y, position_z) }
+Iterate from this teble, find unit in base or buy unit, and transported to define position.
+ONLY SEQUENTLY TRANSPORED UNIT (not use more then 1 atlas at the same time)
+!(Use lua_condition node with checkbox repeat before repeat node, then implement "while cyklus")
 
 Commands
 ---
@@ -70,7 +81,17 @@ It nearest from Metal Storage
 - argument: type_of_unit (variable, string)
 
 
+* FindIdleUnitInBase
+
+Find unit in base (is z left down corner (x > 249 and x < 2513) & (z > 7640 and z < 9978))
+- argument: type_of_unit
+
+
 * WrapToArray 				
 
 convert to Array (Number or Array with only one number (1 = number),
 because manually entering the position generates an array of one element)
+
+* DefinitionOfPositionForAllUnits
+
+Return static table, that define static position for unit types

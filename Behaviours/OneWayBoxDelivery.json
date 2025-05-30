@@ -15,6 +15,9 @@
 	}, {
 		"command": "BETS_UNIT",
 		"name": "box_of_deathID"
+	}, {
+		"command": "Variable",
+		"name": "only_one"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -22,91 +25,91 @@
 			"height": 94,
 			"title": "store",
 			"width": 426,
-			"x": 961,
+			"x": 960,
 			"y": 21
 		},
 		"4i4chx6xRk6AhqFebkJbA6Twffjx5BFK": {
 			"height": 92,
 			"title": "store_stop_subtree",
 			"width": 205,
-			"x": 946,
+			"x": 945,
 			"y": 529
 		},
 		"56IuWQYSAVTcrnIplor9SbYwJab0D92i": {
 			"height": 100,
 			"title": "store",
 			"width": 592,
-			"x": 949,
+			"x": 948,
 			"y": -82
 		},
 		"5BLg9VVqrmMh88LzeinjkeeZ1Kq9m3hD": {
 			"height": 90,
 			"title": "luaCondition_no_aply_this_subtree",
-			"width": 304,
-			"x": 305,
+			"width": 344,
+			"x": 281,
 			"y": 27
 		},
 		"CWqM8KLQDG3za2wbaRvYhbzGkER8KU7H": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 702,
+			"x": 701,
 			"y": -79
 		},
 		"DnZUGJTDQi4LH0QdyrL4bt2FvtIWEdtm": {
 			"height": 94,
 			"title": "store_input_is_table_or_number_atlasID",
 			"width": 387,
-			"x": 1053,
+			"x": 1052,
 			"y": -355
 		},
 		"MRO6gP27PhlCYlitHMIxbfrgHKFOK87V": {
 			"height": 112,
 			"title": "nota_kahlan_ttdr.moveUnitTo",
 			"width": 269,
-			"x": 947,
+			"x": 946,
 			"y": 411
 		},
 		"TrKu0wEcmU5Qbuo0jcQlblcQhhrT0WKv": {
 			"height": 94,
 			"title": "store_input_is_table_or_number_box_of_deathID",
 			"width": 444,
-			"x": 1053,
+			"x": 1052,
 			"y": -264
 		},
 		"XHjJOIveijbOXBqc010qVQlXHGMZsnbO": {
 			"height": 92,
 			"title": "nota_majdat_swampdota.unloadUnit_repair_kahlan",
 			"width": 408,
-			"x": 949,
+			"x": 948,
 			"y": 318
 		},
 		"c8bk7eAv8hqX4nnjnigbtEdS07xNsYYH": {
 			"height": 94,
 			"title": "store",
 			"width": 300,
-			"x": 1052,
+			"x": 1051,
 			"y": -173
 		},
 		"iTpUN9iXT11JnVUqUCQmZzPyY4spv6P8": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 679,
+			"x": 678,
 			"y": 30
 		},
 		"kaUY5V5lvcjJQXNv5p59lhlBFZWsTQVW": {
 			"height": 92,
 			"title": "nota_kahlan_ttdr.loadUnit",
 			"width": 244,
-			"x": 958,
+			"x": 957,
 			"y": 110
 		},
 		"yRWZrpRWqdpGd4RUJ3bEAtk1boJbSM4W": {
 			"height": 112,
 			"title": "nota_kahlan_ttdr.moveUnitTo",
 			"width": 269,
-			"x": 954,
+			"x": 953,
 			"y": 204
 		}
 	},
@@ -223,7 +226,7 @@
 					"value": "atlasID[1]"
 				}, {
 					"name": "radius",
-					"value": "5"
+					"value": "10"
 				}, {
 					"name": "scriptName",
 					"value": "nota_kahlan_ttdr.moveUnitTo"
@@ -256,7 +259,7 @@
 					"value": "atlasID[1]"
 				}, {
 					"name": "radius",
-					"value": "5"
+					"value": "10"
 				}, {
 					"name": "scriptName",
 					"value": "nota_kahlan_ttdr.moveUnitTo"
@@ -286,7 +289,7 @@
 		"nodeType": "luaCondition",
 		"parameters": [ {
 			"name": "expression",
-			"value": "position_for_box == 0"
+			"value": "(position_for_box) == 0  and (only_one == true)"
 		}, {
 			"name": "repeat",
 			"value": "false"

@@ -10,7 +10,7 @@
 	"outputs": [],
 	"properties": {
 		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
-			"height": 130,
+			"height": 151,
 			"title": "reference",
 			"width": 340,
 			"x": 747,
@@ -34,21 +34,21 @@
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1375,
+			"x": 1374,
 			"y": 155
 		},
 		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
-			"height": 130,
+			"height": 151,
 			"title": "reference",
 			"width": 340,
 			"x": 738,
 			"y": -243
 		},
 		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
-			"height": 151,
+			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1253,
+			"x": 1252,
 			"y": 487
 		},
 		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
@@ -66,17 +66,17 @@
 			"y": 224
 		},
 		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
-			"height": 151,
+			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1150,
+			"x": 1149,
 			"y": -6
 		},
 		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
 			"height": 83,
 			"title": "wait",
 			"width": 153,
-			"x": 1270,
+			"x": 1269,
 			"y": 406
 		},
 		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
@@ -101,10 +101,10 @@
 			"y": 112
 		},
 		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
-			"height": 151,
+			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1296,
+			"x": 1294,
 			"y": 221
 		}
 	},
@@ -140,6 +140,9 @@
 				"referenceInputs": [ {
 					"name": "type_of_unit",
 					"value": "\"armseer\""
+				}, {
+					"name": "only_one",
+					"value": "true"
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -153,6 +156,9 @@
 				"referenceInputs": [ {
 					"name": "type_of_unit",
 					"value": "\"armbox\""
+				}, {
+					"name": "only_one",
+					"value": "true"
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -170,6 +176,9 @@
 					}, {
 						"name": "type_of_unit",
 						"value": "\"armbox\""
+					}, {
+						"name": "only_one",
+						"value": "true"
 					} ],
 					"referenceOutputs": []
 				}, {
@@ -195,6 +204,9 @@
 						}, {
 							"name": "type_of_unit",
 							"value": "\"armseer\""
+						}, {
+							"name": "only_one",
+							"value": "true"
 						} ],
 						"referenceOutputs": []
 					} ],
@@ -224,6 +236,9 @@
 						}, {
 							"name": "type_of_unit",
 							"value": "\"armbox\""
+						}, {
+							"name": "only_one",
+							"value": "true"
 						} ],
 						"referenceOutputs": []
 					} ],

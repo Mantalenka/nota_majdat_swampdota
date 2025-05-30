@@ -2,13 +2,16 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 108,
+			"height": 128,
 			"width": 230
 		}
 	},
 	"inputs": [ {
 		"command": "Variable",
 		"name": "type_of_unit"
+	}, {
+		"command": "Variable",
+		"name": "only_one"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -16,8 +19,8 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 517,
-			"y": 175
+			"x": 655,
+			"y": -135
 		},
 		"26YhFUyrlmjlqBvLJnU0KsXSudT7AoVf": {
 			"height": 54,
@@ -29,7 +32,7 @@
 		"32OtBa02nm6kekkK4EWhWe82nRcxPFPl": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 194,
+			"width": 271,
 			"x": 284,
 			"y": 6
 		},
@@ -72,8 +75,8 @@
 			"height": 54,
 			"title": "success_only_one_try_buy_unit",
 			"width": 284,
-			"x": 755,
-			"y": 181
+			"x": 894,
+			"y": -288
 		},
 		"h5jXFgZCJMQjk0hMlZRMdfOwjoGd6lhK": {
 			"height": 73,
@@ -100,8 +103,8 @@
 			"height": 54,
 			"title": "failure_only_one_try_buy_unit",
 			"width": 272,
-			"x": 758,
-			"y": 284
+			"x": 906,
+			"y": -225
 		},
 		"yZHxuOkFejOFHhIBIaqy4zXHNSTiDHxL": {
 			"height": 94,
@@ -117,6 +120,27 @@
 	} ],
 	"root": {
 		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "go4v9UEDwkVtl1J8Pg4Q9fuNEH8bktqm",
+				"nodeType": "success",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "wVHUUTUIQJaAG1f0LRjQXEriZPPRuxK9",
+				"nodeType": "failure",
+				"parameters": []
+			} ],
+			"id": "16JYdQIEl2kGwVvAQ1IgZrFctiBpjQue",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "succes_buying == true"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		}, {
 			"children": [ {
 				"children": [],
 				"id": "yZHxuOkFejOFHhIBIaqy4zXHNSTiDHxL",
@@ -226,33 +250,12 @@
 			"id": "Y2cFSCqZCnL6EM9ZjwEx5b4X5CFAgGso",
 			"nodeType": "sequence",
 			"parameters": []
-		}, {
-			"children": [ {
-				"children": [],
-				"id": "go4v9UEDwkVtl1J8Pg4Q9fuNEH8bktqm",
-				"nodeType": "success",
-				"parameters": []
-			}, {
-				"children": [],
-				"id": "wVHUUTUIQJaAG1f0LRjQXEriZPPRuxK9",
-				"nodeType": "failure",
-				"parameters": []
-			} ],
-			"id": "16JYdQIEl2kGwVvAQ1IgZrFctiBpjQue",
-			"nodeType": "luaCondition",
-			"parameters": [ {
-				"name": "expression",
-				"value": "succes_buying == true"
-			}, {
-				"name": "repeat",
-				"value": "false"
-			} ]
 		} ],
 		"id": "32OtBa02nm6kekkK4EWhWe82nRcxPFPl",
 		"nodeType": "luaCondition",
 		"parameters": [ {
 			"name": "expression",
-			"value": "not mIinfo"
+			"value": "(mIinfo) and (only_one == true)"
 		}, {
 			"name": "repeat",
 			"value": "false"
