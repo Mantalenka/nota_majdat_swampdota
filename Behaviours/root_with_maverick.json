@@ -1,5 +1,94 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "groupDefintion",
+			"value": "groupFormation"
+		}, {
+			"name": "position",
+			"value": "endPos"
+		}, {
+			"name": "formation",
+			"value": "initFormation"
+		}, {
+			"name": "fight",
+			"value": "true"
+		}, {
+			"name": "scriptName",
+			"value": "formation.moveCustomGroup"
+		} ],
+		"scriptName": "formation.moveCustomGroup"
+	}, {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "GhIJZEUryODyh8JslZTFo8yRr13YYSqm",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.find_unit_in_base_or_buy"
+				} ],
+				"referenceInputs": [ {
+					"name": "type_of_unit",
+					"value": "\"ammav\""
+				} ],
+				"referenceOutputs": [ {
+					"name": "unitID",
+					"value": "maveID"
+				} ]
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "DH2jrqVLOBTes4XLt0vJoyIv7lVHqPXT",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": 3
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "ecyfKDX4VPmOmc8TvR6WDNCDhwaVNG8O",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitID",
+							"value": "maveID"
+						}, {
+							"name": "endPos",
+							"value": "endPos"
+						}, {
+							"name": "scriptName",
+							"value": "nota_majdat_swampdota.fightToPosition_oneUnit"
+						} ],
+						"scriptName": "nota_majdat_swampdota.fightToPosition_oneUnit"
+					} ],
+					"id": "yWchn09JdyrM5Ucp5j5bG6PUY6oNbmSH",
+					"nodeType": "repeat",
+					"parameters": []
+				} ],
+				"id": "OU25XKhlBvasdXjd3h0YN6zCR1ruJjNA",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "uJk9rSm0Z4E503xm9pVDTN9eTKsw7Dzq",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "any-result"
+			} ]
+		} ],
+		"id": "rXhkBPDlvvtXKX959BlnmYiS9H2gIWcX",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "goMaverick == true"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -13,239 +102,309 @@
 			"height": 94,
 			"title": "nota_mestek_labs.collectMetal",
 			"width": 368,
-			"x": 1496,
+			"x": 1492,
 			"y": 877
 		},
 		"0ab3K9UXLele433tIFItjBjfmol8JSuq": {
 			"height": 94,
 			"title": "store",
 			"width": 214,
-			"x": 1291,
-			"y": 1705
+			"x": 734,
+			"y": -539
 		},
 		"1TWxNr71CioruIy2g5ay9YvKiW8DnESP": {
 			"height": 94,
 			"title": "store",
 			"width": 324,
-			"x": 1482,
+			"x": 1478,
 			"y": 1078
 		},
 		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 736,
+			"x": 732,
 			"y": -114
 		},
 		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
 			"height": 92,
 			"title": "store_only_one_use_this_tree",
 			"width": 273,
-			"x": 722,
+			"x": 718,
 			"y": -354
 		},
 		"5BlBJkd8ory2RHgSdRH7MlSojiuQ9UUQ": {
 			"height": 94,
 			"title": "store",
-			"width": 528,
-			"x": 1293,
+			"width": 589,
+			"x": 1290,
 			"y": 1617
 		},
 		"7M94n9C0lsdJXnh3Q2ESpyAipNp16Mtl": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 277,
-			"x": 1480,
+			"x": 1476,
 			"y": 1168
 		},
 		"8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU": {
 			"height": 152,
 			"title": "reference",
 			"width": 405,
-			"x": 1500,
+			"x": 1496,
 			"y": 669
 		},
 		"93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 269,
-			"x": 1284,
-			"y": 1815
+			"x": 1773,
+			"y": 1825
 		},
 		"AnmanToKkDiNK9EelJQDqvRDc8ghEQiC": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1034,
+			"x": 1031,
 			"y": 705
+		},
+		"DH2jrqVLOBTes4XLt0vJoyIv7lVHqPXT": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 2763,
+			"y": 1215
+		},
+		"GhIJZEUryODyh8JslZTFo8yRr13YYSqm": {
+			"height": 152,
+			"title": "reference",
+			"width": 405,
+			"x": 2490,
+			"y": 1068
 		},
 		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
 			"height": 54,
 			"title": "success_only_one_use_this_tree",
 			"width": 292,
-			"x": 504,
+			"x": 500,
 			"y": 274
 		},
 		"Jc8CFeqKPSfQOy928sEcVPTE952l5MLB": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1004,
+			"x": 1001,
 			"y": 1062
+		},
+		"L65LKCrqhgYielYyPt2CasRowsDMXcVr": {
+			"height": 132,
+			"title": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot",
+			"width": 529,
+			"x": 1249,
+			"y": 1831
+		},
+		"LV2AVIdMimbJdrQkBWNOggOegldObRSz": {
+			"height": 92,
+			"title": "store",
+			"width": 143,
+			"x": 1303,
+			"y": 1267
 		},
 		"MB0a9qx8JSBtCvJrq2pdWhh3efYDnOjE": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 745,
+			"x": 741,
 			"y": 834
 		},
 		"MJ2xErjzSlk1dwmPgyZP5SzEpk67D822": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1358,
+			"x": 1354,
 			"y": 155
+		},
+		"OU25XKhlBvasdXjd3h0YN6zCR1ruJjNA": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 2411,
+			"y": 1264
 		},
 		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 727,
+			"x": 723,
 			"y": -243
 		},
 		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1237,
+			"x": 1234,
 			"y": 487
 		},
 		"QiO4e9SMJI3i0vYCUH2aTonX3j80CDJy": {
-			"height": 92,
+			"height": 94,
 			"title": "store",
-			"width": 179,
-			"x": 1297,
+			"width": 269,
+			"x": 1294,
 			"y": 1526
 		},
 		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 230,
+			"x": 228,
 			"y": -2
 		},
 		"TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 985,
+			"x": 982,
 			"y": 224
 		},
 		"V4jO5dRyREhkMXBihFhmaqQ6Wtz6Rpmd": {
 			"height": 94,
 			"title": "store",
 			"width": 500,
-			"x": 1314,
-			"y": 1420
+			"x": 1300,
+			"y": 1440
 		},
 		"WMl7F2I5PrFwrb9gCT5Q6yp8OrArpaz0": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
 			"x": 1880,
-			"y": 1142
+			"y": 1022
 		},
 		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1135,
+			"x": 1132,
 			"y": -6
 		},
 		"bYIylb5Bz0mHLW5PUNV7oxh2HzBCNy4r": {
 			"height": 72,
 			"title": "wait_11.5minits",
 			"width": 179,
-			"x": 1262,
-			"y": 1219
+			"x": 1259,
+			"y": 1200
+		},
+		"ecyfKDX4VPmOmc8TvR6WDNCDhwaVNG8O": {
+			"height": 92,
+			"title": "nota_majdat_swampdota.fightToPosition_oneUnit",
+			"width": 396,
+			"x": 2773,
+			"y": 1310
 		},
 		"gvAKil1jBGXLfgEglT0x71ExHKfBhtmh": {
 			"height": 72,
 			"title": "wait_for_fark_exist",
 			"width": 201,
-			"x": 1515,
+			"x": 1511,
 			"y": 812
 		},
 		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
 			"height": 83,
 			"title": "wait",
 			"width": 153,
-			"x": 1254,
+			"x": 1251,
 			"y": 406
 		},
 		"lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1238,
+			"x": 1235,
 			"y": 703
+		},
+		"mYZuvPKN7LzN2wQJE2b6cZNVYTuENnBG": {
+			"height": 92,
+			"title": "store",
+			"width": 143,
+			"x": 738,
+			"y": -446
 		},
 		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1004,
+			"x": 1001,
 			"y": 479
 		},
 		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 503,
+			"x": 499,
 			"y": 9
 		},
 		"pHfgXR5BZ6qpf0rOI8qpSQF7h11Urnw6": {
 			"height": 94,
 			"title": "store",
 			"width": 213,
-			"x": 1486,
+			"x": 1482,
 			"y": 985
 		},
 		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 697,
+			"x": 693,
 			"y": 112
+		},
+		"rXhkBPDlvvtXKX959BlnmYiS9H2gIWcX": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1914,
+			"y": 1188
 		},
 		"tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1075,
+			"x": 1072,
 			"y": 1316
+		},
+		"uJk9rSm0Z4E503xm9pVDTN9eTKsw7Dzq": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 2141,
+			"y": 1197
 		},
 		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1278,
+			"x": 1275,
 			"y": 221
 		},
 		"vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq": {
 			"height": 94,
 			"title": "store",
 			"width": 451,
-			"x": 1291,
-			"y": 1326
+			"x": 1293,
+			"y": 1354
 		},
 		"y2f9UNqHxRpPccndw919KY03nFu1ultW": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1204,
+			"x": 1201,
 			"y": 1062
+		},
+		"yWchn09JdyrM5Ucp5j5bG6PUY6oNbmSH": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 2616,
+			"y": 1321
 		}
 	},
 	"roles": [ {
@@ -255,6 +414,36 @@
 	"root": {
 		"children": [ {
 			"children": [ {
+				"children": [],
+				"id": "0ab3K9UXLele433tIFItjBjfmol8JSuq",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "endPos"
+				}, {
+					"name": "value",
+					"value": "Vec3(7300,25,1300)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "mYZuvPKN7LzN2wQJE2b6cZNVYTuENnBG",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "goMaverick"
+				}, {
+					"name": "value",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
 				"children": [],
 				"id": "55BC57mlLnzokFKaRZf4ykj3nqKtzXDW",
 				"nodeType": "luaCommand",
@@ -516,8 +705,23 @@
 						"nodeType": "wait",
 						"parameters": [ {
 							"name": "time",
-							"value": 690
+							"value": 630
 						} ]
+					}, {
+						"children": [],
+						"id": "LV2AVIdMimbJdrQkBWNOggOegldObRSz",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "goMaverick"
+						}, {
+							"name": "value",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
 					}, {
 						"children": [],
 						"id": "vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq",
@@ -542,7 +746,7 @@
 							"value": "unitData"
 						}, {
 							"name": "value",
-							"value": "nota_majda_turinska_sandsail2_du.Linear_Formation(mavericks)"
+							"value": "nota_majdat_swampdota.formation_3lines(mavericks)"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -572,7 +776,7 @@
 							"value": "initFormation"
 						}, {
 							"name": "value",
-							"value": "formation.StaticTransform(unitData.formation, 45, nil, Vec3(10,10,1))"
+							"value": "formation.StaticTransform(unitData.formation, 45, nil, Vec3(10,10,10))"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -580,22 +784,7 @@
 						"scriptName": "store"
 					}, {
 						"children": [],
-						"id": "0ab3K9UXLele433tIFItjBjfmol8JSuq",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "endPos"
-						}, {
-							"name": "value",
-							"value": "Vec3(5800,25,2900)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR",
+						"id": "L65LKCrqhgYielYyPt2CasRowsDMXcVr",
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "groupDefintion",
@@ -611,9 +800,9 @@
 							"value": "true"
 						}, {
 							"name": "scriptName",
-							"value": "formation.moveCustomGroup"
+							"value": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot"
 						} ],
-						"scriptName": "formation.moveCustomGroup"
+						"scriptName": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot"
 					} ],
 					"id": "tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy",
 					"nodeType": "sequence",

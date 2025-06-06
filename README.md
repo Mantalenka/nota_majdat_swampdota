@@ -1,4 +1,4 @@
-nota_majdat_swampdota 5.0.0
+nota_majdat_swampdota 6.0.0
 ====
 
 * [dependencies](./dependencies.json)
@@ -86,6 +86,17 @@ Commands
 
 She take not existing MissionInfo.safeArea in unloadUnit, chatGPT repair this bug in my command.
 
+
+* moveCustomGroup_dynamically_swith_pivot
+
+Is moveCustomGroup, but if die pivot, then dynamically use other unit and go to position.
+
+
+* fightToPosition_oneUnit
+
+Is not corect code
+
+
 Sensors
 ---
 
@@ -124,3 +135,9 @@ because manually entering the position generates an array of one element)
 * DefinitionOfPositionForAllUnits
 
 Return static table, that define static position for unit types
+
+
+* ComputeAtlasReturnToBase
+
+
+* formation_3lines
