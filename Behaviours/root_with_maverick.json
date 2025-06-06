@@ -1,0 +1,648 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0M8Le5bSGQlRNz2bNqGdRnrZaFLKdrUy": {
+			"height": 94,
+			"title": "nota_mestek_labs.collectMetal",
+			"width": 368,
+			"x": 1496,
+			"y": 877
+		},
+		"0ab3K9UXLele433tIFItjBjfmol8JSuq": {
+			"height": 94,
+			"title": "store",
+			"width": 214,
+			"x": 1291,
+			"y": 1705
+		},
+		"1TWxNr71CioruIy2g5ay9YvKiW8DnESP": {
+			"height": 94,
+			"title": "store",
+			"width": 324,
+			"x": 1482,
+			"y": 1078
+		},
+		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
+			"height": 151,
+			"title": "reference",
+			"width": 340,
+			"x": 736,
+			"y": -114
+		},
+		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
+			"height": 92,
+			"title": "store_only_one_use_this_tree",
+			"width": 273,
+			"x": 722,
+			"y": -354
+		},
+		"5BlBJkd8ory2RHgSdRH7MlSojiuQ9UUQ": {
+			"height": 94,
+			"title": "store",
+			"width": 528,
+			"x": 1293,
+			"y": 1617
+		},
+		"7M94n9C0lsdJXnh3Q2ESpyAipNp16Mtl": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 277,
+			"x": 1480,
+			"y": 1168
+		},
+		"8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU": {
+			"height": 152,
+			"title": "reference",
+			"width": 405,
+			"x": 1500,
+			"y": 669
+		},
+		"93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 269,
+			"x": 1284,
+			"y": 1815
+		},
+		"AnmanToKkDiNK9EelJQDqvRDc8ghEQiC": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1034,
+			"y": 705
+		},
+		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
+			"height": 54,
+			"title": "success_only_one_use_this_tree",
+			"width": 292,
+			"x": 504,
+			"y": 274
+		},
+		"Jc8CFeqKPSfQOy928sEcVPTE952l5MLB": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1004,
+			"y": 1062
+		},
+		"MB0a9qx8JSBtCvJrq2pdWhh3efYDnOjE": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 745,
+			"y": 834
+		},
+		"MJ2xErjzSlk1dwmPgyZP5SzEpk67D822": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1358,
+			"y": 155
+		},
+		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
+			"height": 151,
+			"title": "reference",
+			"width": 340,
+			"x": 727,
+			"y": -243
+		},
+		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
+			"height": 172,
+			"title": "reference",
+			"width": 444,
+			"x": 1237,
+			"y": 487
+		},
+		"QiO4e9SMJI3i0vYCUH2aTonX3j80CDJy": {
+			"height": 92,
+			"title": "store",
+			"width": 179,
+			"x": 1297,
+			"y": 1526
+		},
+		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 230,
+			"y": -2
+		},
+		"TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 985,
+			"y": 224
+		},
+		"V4jO5dRyREhkMXBihFhmaqQ6Wtz6Rpmd": {
+			"height": 94,
+			"title": "store",
+			"width": 500,
+			"x": 1314,
+			"y": 1420
+		},
+		"WMl7F2I5PrFwrb9gCT5Q6yp8OrArpaz0": {
+			"height": 151,
+			"title": "reference",
+			"width": 340,
+			"x": 1880,
+			"y": 1142
+		},
+		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
+			"height": 172,
+			"title": "reference",
+			"width": 444,
+			"x": 1135,
+			"y": -6
+		},
+		"bYIylb5Bz0mHLW5PUNV7oxh2HzBCNy4r": {
+			"height": 72,
+			"title": "wait_11.5minits",
+			"width": 179,
+			"x": 1262,
+			"y": 1219
+		},
+		"gvAKil1jBGXLfgEglT0x71ExHKfBhtmh": {
+			"height": 72,
+			"title": "wait_for_fark_exist",
+			"width": 201,
+			"x": 1515,
+			"y": 812
+		},
+		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
+			"height": 83,
+			"title": "wait",
+			"width": 153,
+			"x": 1254,
+			"y": 406
+		},
+		"lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1238,
+			"y": 703
+		},
+		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1004,
+			"y": 479
+		},
+		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 503,
+			"y": 9
+		},
+		"pHfgXR5BZ6qpf0rOI8qpSQF7h11Urnw6": {
+			"height": 94,
+			"title": "store",
+			"width": 213,
+			"x": 1486,
+			"y": 985
+		},
+		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 697,
+			"y": 112
+		},
+		"tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1075,
+			"y": 1316
+		},
+		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
+			"height": 172,
+			"title": "reference",
+			"width": 444,
+			"x": 1278,
+			"y": 221
+		},
+		"vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq": {
+			"height": 94,
+			"title": "store",
+			"width": 451,
+			"x": 1291,
+			"y": 1326
+		},
+		"y2f9UNqHxRpPccndw919KY03nFu1ultW": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1204,
+			"y": 1062
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "55BC57mlLnzokFKaRZf4ykj3nqKtzXDW",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "x"
+				}, {
+					"name": "value",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.buy_unit_safely"
+				} ],
+				"referenceInputs": [ {
+					"name": "type_of_unit",
+					"value": "\"armseer\""
+				}, {
+					"name": "only_one",
+					"value": "true"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdat_swampdota.buy_unit_safely"
+				} ],
+				"referenceInputs": [ {
+					"name": "type_of_unit",
+					"value": "\"armbox\""
+				}, {
+					"name": "only_one",
+					"value": "true"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
+					} ],
+					"referenceInputs": [ {
+						"name": "position_for_box",
+						"value": "Vec3(4683,17,4425)"
+					}, {
+						"name": "type_of_unit",
+						"value": "\"armbox\""
+					}, {
+						"name": "only_one",
+						"value": "true"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "MJ2xErjzSlk1dwmPgyZP5SzEpk67D822",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 2
+						} ]
+					}, {
+						"children": [],
+						"id": "vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
+						} ],
+						"referenceInputs": [ {
+							"name": "position_for_box",
+							"value": "Vec3(4708,41,4051)"
+						}, {
+							"name": "type_of_unit",
+							"value": "\"armseer\""
+						}, {
+							"name": "only_one",
+							"value": "true"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 4
+						} ]
+					}, {
+						"children": [],
+						"id": "PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.find_atlas_and_box_then_move"
+						} ],
+						"referenceInputs": [ {
+							"name": "position_for_box",
+							"value": "Vec3(5620,45,5560)"
+						}, {
+							"name": "type_of_unit",
+							"value": "\"armbox\""
+						}, {
+							"name": "only_one",
+							"value": "true"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "miS1d6kP18Lh3T73tLVwEKKcYke7MNwp",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_majdat_swampdota.find_unit_in_base_or_buy"
+							} ],
+							"referenceInputs": [ {
+								"name": "type_of_unit",
+								"value": "\"armfark\""
+							} ],
+							"referenceOutputs": [ {
+								"name": "unitID",
+								"value": "farkID"
+							} ]
+						}, {
+							"children": [],
+							"id": "gvAKil1jBGXLfgEglT0x71ExHKfBhtmh",
+							"nodeType": "wait",
+							"parameters": [ {
+								"name": "time",
+								"value": 2
+							} ]
+						}, {
+							"children": [],
+							"id": "0M8Le5bSGQlRNz2bNqGdRnrZaFLKdrUy",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "farckIDs",
+								"value": "{farkID}"
+							}, {
+								"name": "area",
+								"value": "{center = Vec3(5000,40,5000), radius = 1300}"
+							}, {
+								"name": "scriptName",
+								"value": "nota_mestek_labs.collectMetal"
+							} ],
+							"scriptName": "nota_mestek_labs.collectMetal"
+						} ],
+						"id": "lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "AnmanToKkDiNK9EelJQDqvRDc8ghEQiC",
+					"nodeType": "repeat",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "pHfgXR5BZ6qpf0rOI8qpSQF7h11Urnw6",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "mIinfo"
+							}, {
+								"name": "value",
+								"value": "core.MissionInfo()"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "1TWxNr71CioruIy2g5ay9YvKiW8DnESP",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "curMetal"
+							}, {
+								"name": "value",
+								"value": "Spring.GetTeamResources(0,\"metal\")"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [ {
+								"children": [],
+								"id": "WMl7F2I5PrFwrb9gCT5Q6yp8OrArpaz0",
+								"nodeType": "reference",
+								"parameters": [ {
+									"name": "behaviourName",
+									"value": "nota_majdat_swampdota.buy_unit_safely"
+								} ],
+								"referenceInputs": [ {
+									"name": "type_of_unit",
+									"value": "\"armmav\""
+								}, {
+									"name": "only_one",
+									"value": "false"
+								} ],
+								"referenceOutputs": []
+							} ],
+							"id": "7M94n9C0lsdJXnh3Q2ESpyAipNp16Mtl",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "curMetal > mIinfo.buy[\"armmav\"]"
+							}, {
+								"name": "repeat",
+								"value": "false"
+							} ]
+						} ],
+						"id": "y2f9UNqHxRpPccndw919KY03nFu1ultW",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "Jc8CFeqKPSfQOy928sEcVPTE952l5MLB",
+					"nodeType": "repeat",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "bYIylb5Bz0mHLW5PUNV7oxh2HzBCNy4r",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 690
+						} ]
+					}, {
+						"children": [],
+						"id": "vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "mavericks"
+						}, {
+							"name": "value",
+							"value": "nota_majdat_swampdota.FindAllArmMav()"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "V4jO5dRyREhkMXBihFhmaqQ6Wtz6Rpmd",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "unitData"
+						}, {
+							"name": "value",
+							"value": "nota_majda_turinska_sandsail2_du.Linear_Formation(mavericks)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "QiO4e9SMJI3i0vYCUH2aTonX3j80CDJy",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "groupFormation"
+						}, {
+							"name": "value",
+							"value": "unitData.group"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "5BlBJkd8ory2RHgSdRH7MlSojiuQ9UUQ",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "initFormation"
+						}, {
+							"name": "value",
+							"value": "formation.StaticTransform(unitData.formation, 45, nil, Vec3(10,10,1))"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "0ab3K9UXLele433tIFItjBjfmol8JSuq",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "endPos"
+						}, {
+							"name": "value",
+							"value": "Vec3(5800,25,2900)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "groupDefintion",
+							"value": "groupFormation"
+						}, {
+							"name": "position",
+							"value": "endPos"
+						}, {
+							"name": "formation",
+							"value": "initFormation"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "formation.moveCustomGroup"
+						} ],
+						"scriptName": "formation.moveCustomGroup"
+					} ],
+					"id": "tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "MB0a9qx8JSBtCvJrq2pdWhh3efYDnOjE",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "not x"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

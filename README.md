@@ -1,4 +1,4 @@
-nota_majdat_swampdota 4.0.0
+nota_majdat_swampdota 5.0.0
 ====
 
 * [dependencies](./dependencies.json)
@@ -73,6 +73,12 @@ Iterate from this teble, find unit in base or buy unit, and transported to defin
 ONLY SEQUENTLY TRANSPORED UNIT (not use more then 1 atlas at the same time)
 !(Use lua_condition node with checkbox repeat before repeat node, then implement "while cyklus")
 
+
+* root_with_maverick
+
+It is same with root, but in end of game (about 6:10) is my Maverick wave
+- every time if I have a Metal, by Maverick from end game wave
+
 Commands
 ---
 
@@ -104,6 +110,9 @@ It nearest from Metal Storage
 
 Find unit in base (is z left down corner (x > 249 and x < 2513) & (z > 7640 and z < 9978))
 - argument: type_of_unit
+
+
+* FindAllArmMav
 
 
 * WrapToArray 				

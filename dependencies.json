@@ -1,9 +1,10 @@
 {
 	"core": "0.8.x",
 	"map": "0.5.x",
-	"formation": "0.3.x",
+	"formation": "0.3.4",
 	"nota_common": "0.3.x",
 	"nota_kahlan_ttdr": "1.x",
 	"hlaa_nota_zivnusmEXAM": "x.x",
 	"nota_mestek_labs": "4.1",
+	"nota_majda_turinska_sandsail2_lastV": "x.x",
 }
