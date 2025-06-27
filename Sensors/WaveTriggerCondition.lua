@@ -31,5 +31,5 @@ return function(strongPoint, waveTime, mlinfo)
   end
 
   local currentTime = SpringGetGameFrame() / 30
-  return (currentTime - waveTime) > 420
+  return (currentTime - waveTime) > 380
 end

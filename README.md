@@ -1,4 +1,4 @@
-nota_majdat_swampdota 6.0.0
+nota_majdat_swampdota 7.0.0
 ====
 
 * [dependencies](./dependencies.json)
@@ -38,6 +38,7 @@ Check if the player has enough metal and if so, use hlaa_nota_zivnusmEXAM.buyUni
 * find_unit_in_base_or_buy
 Use FindIdleUnitInBase, if not exist buy unit
 - argument: type_of_unit
+- argument: inBase (variable, boolean) 			- if true, search only in base, otherwise also outside
 - return(output): unitID
 
 
@@ -76,8 +77,11 @@ ONLY SEQUENTLY TRANSPORED UNIT (not use more then 1 atlas at the same time)
 
 * root_with_maverick
 
-It is same with root, but in end of game (about 6:10) is my Maverick wave
-- every time if I have a Metal, by Maverick from end game wave
+This is an enhanced version of the root behavior with additional Maverick logic for the late game.
+- Whenever a new StrongPoint is captured or 380 seconds have passed since the last wave, a Maverick wave is triggered.
+- Available Maverick units are positioned near the center of the map.
+- After the first StrongPoint is captured, the script waits 70 seconds, then moves the Box of Death units further along the battle path.
+
 
 Commands
 ---
@@ -95,6 +99,12 @@ Is moveCustomGroup, but if die pivot, then dynamically use other unit and go to 
 * fightToPosition_oneUnit
 
 Is not corect code
+
+
+* MoveSingleUnit
+
+Moves single unit to given position with optional fight mode. 
+Returns SUCCESS if unit arrives close enough, or after increasing threshold timeout.
 
 
 Sensors
@@ -121,6 +131,7 @@ It nearest from Metal Storage
 
 Find unit in base (is z left down corner (x > 249 and x < 2513) & (z > 7640 and z < 9978))
 - argument: type_of_unit
+- argument: inBase (boolean)		- if true, search only in base, otherwise also outside
 
 
 * FindAllArmMav
@@ -130,6 +141,7 @@ Find unit in base (is z left down corner (x > 249 and x < 2513) & (z > 7640 and 
 
 convert to Array (Number or Array with only one number (1 = number),
 because manually entering the position generates an array of one element)
+- argument: input 		- number or table input
 
 
 * DefinitionOfPositionForAllUnits
@@ -139,5 +151,31 @@ Return static table, that define static position for unit types
 
 * ComputeAtlasReturnToBase
 
+- argument: atlasID
+- argument: targetPos
+- argument: distance		- how far to move back toward base
+
 
 * formation_3lines
+
+- argument: listOfUnits
+
+* RandomUnitPosition
+
+Returns uniform random position from static line (default values configured)
+
+
+* WaveTrigegerCondition
+
+Returns true if:
+new strongpoint conquered (mlinfo.goodStrongpoints > strongPoint)
+or more than 380s passed since last waveTime
+- argument: strongPoint 	- number of strongPoints captured during the previous wave
+- argument: waveTime		- time of my last Maverick wave
+- argument: mlinfo			- core.MissionInfo
+
+
+* StrongpointAreaSensor_FARK
+
+Returns static areas for metal collection based on strongpoint count.
+- argument: goodStrongpoints (count of my strongPoint)

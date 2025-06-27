@@ -1,8 +1,8 @@
 local sensorInfo = {
   name = "FindIdleUnitInBase",
-  desc = "Returns ID of stationary unit of given type in base or 0 if none found",
+  desc = "Returns ID of stationary unit of given type either in base or anywhere, depending on input",
   author = "MajdaT + CodeCopilot",
-  date = "2025-05-30",
+  date = "2025-06-27",
   license = "notAlicense"
 }
 
@@ -31,7 +31,11 @@ local function IsStationary(unitID)
   return speedSqr < 1
 end
 
-return function(type_of_unit)
+-- @description: Returns ID of idle unit of specific type, filtered by inBase
+-- @argument type_of_unit [string] - unit type to look for
+-- @argument inBase [boolean] - if true, restrict search to base only
+-- @return [number] - unit ID or 0 if none found
+return function(type_of_unit, inBase)
   local units = SpringGetTeamUnits(myTeamID())
 
   for i = 1, #units do
@@ -40,7 +44,7 @@ return function(type_of_unit)
     if defID and UnitDefs[defID].name == type_of_unit then
       if not SpringGetUnitIsTransported(unitID) then
         local x, y, z = SpringGetUnitPosition(unitID)
-        if IsInBase(x, z) and IsStationary(unitID) then
+        if IsStationary(unitID) and (not inBase or IsInBase(x, z)) then
           return unitID
         end
       end

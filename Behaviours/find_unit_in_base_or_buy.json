@@ -2,13 +2,16 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 130,
+			"height": 150,
 			"width": 230
 		}
 	},
 	"inputs": [ {
 		"command": "Variable",
 		"name": "type_of_unit"
+	}, {
+		"command": "Variable",
+		"name": "inBase"
 	} ],
 	"outputs": [ {
 		"name": "unitID"
@@ -38,9 +41,9 @@
 		"CSaRrjBfofzbtdNaEcWIhGeC8RqcSZh3": {
 			"height": 94,
 			"title": "store",
-			"width": 456,
-			"x": 652,
-			"y": -140
+			"width": 507,
+			"x": 556,
+			"y": -147
 		},
 		"OM2FzPy64vZb1MQQ3TdyIKqNPK21YC67": {
 			"height": 94,
@@ -85,7 +88,7 @@
 				"value": "unitID"
 			}, {
 				"name": "value",
-				"value": "nota_majdat_swampdota.FindIdleUnitInBase(type_of_unit)"
+				"value": "nota_majdat_swampdota.FindIdleUnitInBase(type_of_unit, inBase)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
