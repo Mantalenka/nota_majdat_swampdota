@@ -3,7 +3,7 @@ local sensorInfo = {
   desc = "Returns ID of stationary unit of given type in base or 0 if none found",
   author = "MajdaT + CodeCopilot",
   date = "2025-05-30",
-  license = "MIT"
+  license = "notAlicense"
 }
 
 local EVAL_PERIOD_DEFAULT = -1
