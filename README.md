@@ -1,4 +1,4 @@
-nota_majdat_swampdota 7.0.0
+nota_majdat_swampdota 8.0.0
 ====
 
 * [dependencies](./dependencies.json)
