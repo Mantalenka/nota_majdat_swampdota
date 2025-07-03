@@ -179,3 +179,18 @@ or more than 380s passed since last waveTime
 
 Returns static areas for metal collection based on strongpoint count.
 - argument: goodStrongpoints (count of my strongPoint)
+
+
+* FindBattle
+
+Return static position of battle - TODO generate real position
+Draw battle position
+- argument: missionInformation
+
+
+* FindAllArmMavCloseToBattle
+
+Return Mavericks close the battle
+Draw squere about "close"
+- argument: position
+- argument: radius

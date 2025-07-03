@@ -21,14 +21,15 @@ return function(listOfUnits)
   local groupDefinition = {}
   local formation = {}
 
-  local spacingX = 20  -- horizontal spacing between columns
-  local spacingZ = 20  -- spacing between rows
-  local columns = math.ceil(#listOfUnits / 3)
+  local spacingX = 1  -- horizontal spacing between columns
+  local spacingZ = 1  -- spacing between rows
+  local rows = 2
+  local columns = math.ceil(#listOfUnits / rows)
 
   local rowOffsets = { spacingZ, 0, -spacingZ }  -- back, middle, front
   local unitIndex = 1
 
-  for row = 1, 3 do
+  for row = 1, rows do
     for col = 1, columns do
       if unitIndex > #listOfUnits then break end
 

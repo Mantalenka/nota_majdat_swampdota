@@ -1,94 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [ {
-			"children": [ {
-				"children": [],
-				"id": "GhIJZEUryODyh8JslZTFo8yRr13YYSqm",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_majdat_swampdota.find_unit_in_base_or_buy"
-				} ],
-				"referenceInputs": [ {
-					"name": "type_of_unit",
-					"value": "\"ammav\""
-				} ],
-				"referenceOutputs": [ {
-					"name": "unitID",
-					"value": "maveID"
-				} ]
-			}, {
-				"children": [ {
-					"children": [],
-					"id": "DH2jrqVLOBTes4XLt0vJoyIv7lVHqPXT",
-					"nodeType": "wait",
-					"parameters": [ {
-						"name": "time",
-						"value": 3
-					} ]
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "ecyfKDX4VPmOmc8TvR6WDNCDhwaVNG8O",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "unitID",
-							"value": "maveID"
-						}, {
-							"name": "endPos",
-							"value": "endPos"
-						}, {
-							"name": "scriptName",
-							"value": "nota_majdat_swampdota.fightToPosition_oneUnit"
-						} ],
-						"scriptName": "nota_majdat_swampdota.fightToPosition_oneUnit"
-					} ],
-					"id": "yWchn09JdyrM5Ucp5j5bG6PUY6oNbmSH",
-					"nodeType": "repeat",
-					"parameters": []
-				} ],
-				"id": "OU25XKhlBvasdXjd3h0YN6zCR1ruJjNA",
-				"nodeType": "sequence",
-				"parameters": []
-			} ],
-			"id": "uJk9rSm0Z4E503xm9pVDTN9eTKsw7Dzq",
-			"nodeType": "parallel",
-			"parameters": [ {
-				"name": "mode",
-				"value": "any-result"
-			} ]
-		} ],
-		"id": "rXhkBPDlvvtXKX959BlnmYiS9H2gIWcX",
-		"nodeType": "luaCondition",
-		"parameters": [ {
-			"name": "expression",
-			"value": "goMaverick == true"
-		}, {
-			"name": "repeat",
-			"value": "false"
-		} ]
-	}, {
-		"children": [],
-		"id": "93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "groupDefintion",
-			"value": "groupFormation"
-		}, {
-			"name": "position",
-			"value": "Vec3(5000, 45,4900)"
-		}, {
-			"name": "formation",
-			"value": "initFormation"
-		}, {
-			"name": "fight",
-			"value": "false"
-		}, {
-			"name": "scriptName",
-			"value": "formation.moveCustomGroup"
-		} ],
-		"scriptName": "formation.moveCustomGroup"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -102,169 +13,134 @@
 			"height": 94,
 			"title": "nota_mestek_labs.collectMetal",
 			"width": 599,
-			"x": 1449,
+			"x": 1436,
 			"y": 868
 		},
 		"0ab3K9UXLele433tIFItjBjfmol8JSuq": {
 			"height": 94,
 			"title": "store",
 			"width": 214,
-			"x": 708,
+			"x": 711,
 			"y": -539
 		},
 		"1TWxNr71CioruIy2g5ay9YvKiW8DnESP": {
 			"height": 94,
 			"title": "store",
 			"width": 324,
-			"x": 1445,
+			"x": 1432,
 			"y": 1078
 		},
 		"2W7vmLYLw0oSuZlRVawxU5usRLQalqRM": {
 			"height": 94,
 			"title": "store",
 			"width": 412,
-			"x": 1675,
+			"x": 1662,
 			"y": 1377
 		},
 		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 703,
+			"x": 706,
 			"y": -114
 		},
 		"55BC57mlLnzokFKaRZf4ykj3nqKtzXDW": {
 			"height": 92,
 			"title": "store_only_one_use_this_tree",
 			"width": 273,
-			"x": 689,
+			"x": 692,
 			"y": -354
-		},
-		"5BlBJkd8ory2RHgSdRH7MlSojiuQ9UUQ": {
-			"height": 94,
-			"title": "store",
-			"width": 589,
-			"x": 1959,
-			"y": 2057
 		},
 		"68qDuChkkRk1b3AtRfWfPbC8CXnW3O6I": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 230,
-			"x": 1114,
-			"y": 3310
+			"x": 1261,
+			"y": 2486
 		},
 		"7M94n9C0lsdJXnh3Q2ESpyAipNp16Mtl": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 277,
-			"x": 1443,
+			"x": 1430,
 			"y": 1168
 		},
 		"7XhO4bff7oOoRgOyCPXRUn6YjIFzqWoQ": {
 			"height": 110,
 			"title": "nota_majdat_swampdota.MoveSingleUnit",
 			"width": 412,
-			"x": 1686,
+			"x": 1673,
 			"y": 1466
 		},
 		"8Jqt1EgyQrFdLwrh3gizMcXQOdUjvlTJ": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1654,
-			"y": 3386
+			"x": 1797,
+			"y": 2562
 		},
 		"8wlbQz0Z1FPLj9Tip39k7fs6kHBWXJYU": {
 			"height": 173,
 			"title": "reference",
 			"width": 405,
-			"x": 1452,
+			"x": 1439,
 			"y": 637
-		},
-		"93bMWdLzD7VFnsbNKQuJ0WSnPtu5xEMR": {
-			"height": 132,
-			"title": "formation.moveCustomGroup",
-			"width": 269,
-			"x": 2437,
-			"y": 2157
-		},
-		"ASLgx5ymnsLEJruakQLAUIhaqfvHxbMO": {
-			"height": 72,
-			"title": "wait",
-			"width": 131,
-			"x": 1967,
-			"y": 1567
 		},
 		"AnmanToKkDiNK9EelJQDqvRDc8ghEQiC": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1004,
+			"x": 999,
 			"y": 705
 		},
 		"By5JetYPwXP6CuVi6ri4a3jU7CNjRHWS": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 222,
-			"x": 1284,
-			"y": 2586
-		},
-		"DH2jrqVLOBTes4XLt0vJoyIv7lVHqPXT": {
-			"height": 72,
-			"title": "wait",
-			"width": 131,
-			"x": 3331,
-			"y": 1413
+			"x": 1290,
+			"y": 1750
 		},
 		"DKhvBGOubyJ9WXRCjyNUjBo5bDM36Z4N": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1093,
-			"y": 2598
+			"x": 1100,
+			"y": 1762
 		},
 		"EnV4PUm2TcxzI4zXBaQCt4oM6n53inue": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 2166,
-			"y": 3156
-		},
-		"GhIJZEUryODyh8JslZTFo8yRr13YYSqm": {
-			"height": 173,
-			"title": "reference",
-			"width": 405,
-			"x": 3066,
-			"y": 1266
+			"x": 2308,
+			"y": 2332
 		},
 		"HW8zvAgmox3bO6qju0P0SrAYHnQkua9Z": {
 			"height": 110,
 			"title": "nota_majdat_swampdota.MoveSingleUnit",
 			"width": 324,
-			"x": 2101,
-			"y": 3499
+			"x": 2243,
+			"y": 2675
 		},
 		"HkaLsEeELnLj2ALiDBGtJmO8hFdnRPlg": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 973,
-			"y": 1753
+			"x": 990,
+			"y": 1561
 		},
 		"HvFxbVHIrYsBsaonQB4qwSNSx3xLjLif": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1613,
-			"y": 3316
+			"x": 1756,
+			"y": 2492
 		},
 		"IFMxjdlwmQAN8WdlTIrhmX2pmkybOvOH": {
 			"height": 94,
 			"title": "store",
 			"width": 479,
-			"x": 2261,
-			"y": 2668
+			"x": 2263,
+			"y": 1832
 		},
 		"JTjZINtZw8Ybraw5xrhFTcb8jajr2YfG": {
 			"height": 54,
@@ -277,272 +153,216 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 974,
+			"x": 969,
 			"y": 1062
-		},
-		"L65LKCrqhgYielYyPt2CasRowsDMXcVr": {
-			"height": 132,
-			"title": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot",
-			"width": 529,
-			"x": 1966,
-			"y": 2291
-		},
-		"LV2AVIdMimbJdrQkBWNOggOegldObRSz": {
-			"height": 92,
-			"title": "store",
-			"width": 238,
-			"x": 1961,
-			"y": 1629
-		},
-		"LlLQzabGtapvRZjPztPQqAl3otFWE63E": {
-			"height": 132,
-			"title": "nota_majdaT_ctp2.moveCustomGroupAllArrived",
-			"width": 388,
-			"x": 1975,
-			"y": 2150
 		},
 		"MB0a9qx8JSBtCvJrq2pdWhh3efYDnOjE": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 686,
+			"x": 689,
 			"y": 836
 		},
 		"MJ2xErjzSlk1dwmPgyZP5SzEpk67D822": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1324,
-			"y": 155
+			"x": 1395,
+			"y": 152
 		},
 		"MWlMY5CccKyLHozswMqmSbMAFQVFiHFK": {
 			"height": 83,
 			"title": "wait",
 			"width": 153,
-			"x": 2310,
-			"y": 2902
+			"x": 2312,
+			"y": 2066
 		},
 		"NXBthKYXCvRCImKILe26OCUUQY3bT6RR": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1763,
-			"y": 2580
-		},
-		"OU25XKhlBvasdXjd3h0YN6zCR1ruJjNA": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 2985,
-			"y": 1462
-		},
-		"OY2RN4AV1B4XYWoY6GGd81mVuyTlL3yq": {
-			"height": 90,
-			"title": "luaCondition",
-			"width": 551,
-			"x": 1146,
-			"y": 1745
+			"x": 1766,
+			"y": 1744
 		},
 		"OyR7NNPGHhdvqlGzrY7kAnRyFosIsCEG": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 694,
+			"x": 697,
 			"y": -243
 		},
 		"PQYmqteRcjzBJfDc7LluzBMzotvgQ7iU": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1207,
-			"y": 487
-		},
-		"QiO4e9SMJI3i0vYCUH2aTonX3j80CDJy": {
-			"height": 94,
-			"title": "store",
-			"width": 269,
-			"x": 1963,
-			"y": 1966
+			"x": 1281,
+			"y": 484
 		},
 		"QlgZHjDJ7OVhMOHXmf4pzgVr1FJiiR01": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 218,
+			"x": 222,
 			"y": -2
 		},
 		"R7u5bN0AzDmphJ7AhsUOkpWSuMCPUu04": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1408,
-			"y": 3320
-		},
-		"SJUdVbY8XpDPdEfhWv3iGAMDSd3YehGc": {
-			"height": 94,
-			"title": "store",
-			"width": 271,
-			"x": 1958,
-			"y": 1711
+			"x": 1551,
+			"y": 2496
 		},
 		"TuvXWaPFz8qN2xYFFNfgTWOtdCDYX6LI": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 955,
-			"y": 224
-		},
-		"V4jO5dRyREhkMXBihFhmaqQ6Wtz6Rpmd": {
-			"height": 94,
-			"title": "store",
-			"width": 500,
-			"x": 1969,
-			"y": 1880
+			"x": 1030,
+			"y": 221
 		},
 		"W2jJrNI7A8g8lcJvNoJakxb4GbD5ROzx": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1879,
-			"y": 3446
+			"x": 2021,
+			"y": 2622
 		},
 		"WMl7F2I5PrFwrb9gCT5Q6yp8OrArpaz0": {
 			"height": 151,
 			"title": "reference",
 			"width": 340,
-			"x": 1914,
+			"x": 1900,
 			"y": 1126
 		},
 		"XhGGyZT1bq1jEomO3bxvezfa8wmRRovz": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 951,
-			"y": 3322
+			"x": 1102,
+			"y": 2498
 		},
 		"YRIymKo5qHQzo6hIkpMvDpGevfAxvGNq": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1105,
-			"y": -6
+			"x": 1179,
+			"y": -9
 		},
 		"a54FA3a0m2anfQ3bC8DUxDE7tXV478bj": {
 			"height": 94,
 			"title": "store",
 			"width": 213,
-			"x": 700,
+			"x": 703,
 			"y": -724
 		},
 		"b9TYNHvRZdsUQpuHHsIsMwGSgAu2r0HH": {
 			"height": 92,
 			"title": "store",
 			"width": 238,
-			"x": 707,
+			"x": 710,
 			"y": -632
 		},
 		"c5wg8Rn1kMt9yvaabVszBhJeDGoeFneh": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2028,
-			"y": 2710
-		},
-		"ecyfKDX4VPmOmc8TvR6WDNCDhwaVNG8O": {
-			"height": 92,
-			"title": "nota_majdat_swampdota.fightToPosition_oneUnit",
-			"width": 396,
-			"x": 3341,
-			"y": 1508
+			"x": 2030,
+			"y": 1874
 		},
 		"gmy8EKIXIxpgsJops73ipPBOuDUAu6lz": {
 			"height": 94,
 			"title": "store",
-			"width": 440,
-			"x": 1561,
+			"width": 479,
+			"x": 1548,
 			"y": 1275
 		},
 		"gvAKil1jBGXLfgEglT0x71ExHKfBhtmh": {
 			"height": 72,
 			"title": "wait_for_fark_exist",
 			"width": 201,
-			"x": 1466,
+			"x": 1453,
 			"y": 792
 		},
 		"hA6aPKowK7EppUFZEcZBqye4ehqPALeZ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1558,
-			"y": 2584
+			"x": 1561,
+			"y": 1748
 		},
 		"iDCrylJhQXqhGYW1HIHoqxBFInDJCsBg": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 2088,
-			"y": 3327
+			"x": 2230,
+			"y": 2503
 		},
 		"kzfwGR3VJ9vCgjNh2luTNyUtI3Tir5KJ": {
 			"height": 83,
 			"title": "wait",
 			"width": 153,
-			"x": 1221,
-			"y": 406
+			"x": 1294,
+			"y": 403
 		},
 		"lBLJezgMB8NMiGU98cNlaFLuvBX8OTTc": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 983,
+			"x": 978,
 			"y": 1395
+		},
+		"lLAYtSKUvG1G9r0Zq92elAK1ZgWIvywI": {
+			"height": 172,
+			"title": "reference",
+			"width": 342,
+			"x": 1253,
+			"y": 1541
 		},
 		"lalP87A6Euq7oyCLWZ9bYbkMD5rwj6ay": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1208,
+			"x": 1199,
 			"y": 703
 		},
 		"mFTZpry0AMPLar3YgrT1wK2qzkAp15ZN": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1772,
-			"y": 2503
+			"x": 1775,
+			"y": 1667
 		},
 		"mWuIEB9T7AZe4roPLmp7uYYsGmwYCLoY": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1804,
-			"y": 2650
+			"x": 1807,
+			"y": 1814
 		},
 		"mYZuvPKN7LzN2wQJE2b6cZNVYTuENnBG": {
 			"height": 92,
 			"title": "store",
 			"width": 143,
-			"x": 712,
+			"x": 715,
 			"y": -446
 		},
 		"miS1d6kP18Lh3T73tLVwEKKcYke7MNwp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 974,
-			"y": 479
+			"x": 1049,
+			"y": 476
 		},
 		"nMEHgGNBmq7ZeguDXs5xo66o9RqaRV9g": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 2316,
-			"y": 2420
+			"x": 2318,
+			"y": 1584
 		},
 		"o2VdKQjyChepTtLPhkC4iJZcb9FYVtRk": {
-			"height": 60,
+			"height": 82,
 			"title": "sequence",
-			"width": 143,
+			"width": 153,
 			"x": 475,
 			"y": 9
 		},
@@ -550,120 +370,85 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1440,
+			"x": 1427,
 			"y": 1389
 		},
 		"pHfgXR5BZ6qpf0rOI8qpSQF7h11Urnw6": {
 			"height": 94,
 			"title": "store",
 			"width": 213,
-			"x": 1449,
+			"x": 1436,
 			"y": 985
 		},
 		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 664,
-			"y": 112
-		},
-		"rXhkBPDlvvtXKX959BlnmYiS9H2gIWcX": {
-			"height": 90,
-			"title": "luaCondition",
-			"width": 194,
-			"x": 2488,
-			"y": 1386
+			"x": 745,
+			"y": 109
 		},
 		"s3zd92Hfdo7TaV59iEoyL7GPVadfojXW": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 2296,
-			"y": 2983
-		},
-		"tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1745,
-			"y": 1756
+			"x": 2298,
+			"y": 2147
 		},
 		"tVM3AUNp4biOeG24uCEU7bhj6WOeEIbq": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 2238,
-			"y": 2591
-		},
-		"uJk9rSm0Z4E503xm9pVDTN9eTKsw7Dzq": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 2719,
-			"y": 1395
+			"x": 2240,
+			"y": 1755
 		},
 		"vHjNbJH2mLHdTcVyoAFCf4n5Whpxb3EL": {
 			"height": 172,
 			"title": "reference",
 			"width": 444,
-			"x": 1245,
-			"y": 221
-		},
-		"vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq": {
-			"height": 94,
-			"title": "store",
-			"width": 451,
-			"x": 1962,
-			"y": 1794
+			"x": 1318,
+			"y": 218
 		},
 		"w4wkq9RZwxRv0O3gz9zftkZMmkPSnjFw": {
 			"height": 110,
 			"title": "nota_majdat_swampdota.MoveSingleUnit",
 			"width": 324,
-			"x": 2251,
-			"y": 2763
+			"x": 2253,
+			"y": 1927
 		},
 		"xR2Tikk4elaMDMcLJ68oIpYONrWFRKvQ": {
 			"height": 94,
 			"title": "store",
 			"width": 479,
-			"x": 2111,
-			"y": 3404
+			"x": 2253,
+			"y": 2580
 		},
 		"y2f9UNqHxRpPccndw919KY03nFu1ultW": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1174,
+			"x": 1165,
 			"y": 1062
-		},
-		"yWchn09JdyrM5Ucp5j5bG6PUY6oNbmSH": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 3188,
-			"y": 1519
 		},
 		"zMFuguKPaAgsD4rTmpTbJwZ9saou4sam": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1163,
+			"x": 1154,
 			"y": 1388
 		},
 		"zMbZH7D91OI1YaZ4oOO4OJQHIOV8XzSI": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1622,
-			"y": 3239
+			"x": 1765,
+			"y": 2415
 		},
 		"zY1MgujjekbtBj7rmhQKa8doS5TmmKRu": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2061,
-			"y": 2984
+			"x": 2063,
+			"y": 2148
 		}
 	},
 	"roles": [ {
@@ -741,7 +526,7 @@
 					"value": "x"
 				}, {
 					"name": "value",
-					"value": "true"
+					"value": "false"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -1001,7 +786,7 @@
 								"value": "mavID"
 							}, {
 								"name": "value",
-								"value": "nota_majdat_swampdota.FindIdleUnitInBase(\"armmav\")"
+								"value": "nota_majdat_swampdota.FindIdleUnitInBase(\"armmav\", true)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -1055,161 +840,21 @@
 					"parameters": []
 				}, {
 					"children": [ {
-						"children": [ {
-							"children": [ {
-								"children": [],
-								"id": "ASLgx5ymnsLEJruakQLAUIhaqfvHxbMO",
-								"nodeType": "wait",
-								"parameters": [ {
-									"name": "time",
-									"value": 40
-								} ]
-							}, {
-								"children": [],
-								"id": "LV2AVIdMimbJdrQkBWNOggOegldObRSz",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "strongPoint"
-								}, {
-									"name": "value",
-									"value": "mlinfo.goodStrongpoints"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "SJUdVbY8XpDPdEfhWv3iGAMDSd3YehGc",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "waveTime"
-								}, {
-									"name": "value",
-									"value": "Spring.GetGameFrame() / 30"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "vvOgCxLUfyjAPmccDAzEvNoB5tYdfkSq",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "mavericks"
-								}, {
-									"name": "value",
-									"value": "nota_majdat_swampdota.FindAllArmMav()"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "V4jO5dRyREhkMXBihFhmaqQ6Wtz6Rpmd",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "unitData"
-								}, {
-									"name": "value",
-									"value": "nota_majdat_swampdota.formation_3lines(mavericks)"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "QiO4e9SMJI3i0vYCUH2aTonX3j80CDJy",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "groupFormation"
-								}, {
-									"name": "value",
-									"value": "unitData.group"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "5BlBJkd8ory2RHgSdRH7MlSojiuQ9UUQ",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "initFormation"
-								}, {
-									"name": "value",
-									"value": "formation.StaticTransform(unitData.formation, 45, nil, Vec3(10,10,6))"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
-							}, {
-								"children": [],
-								"id": "LlLQzabGtapvRZjPztPQqAl3otFWE63E",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "groupDefintion",
-									"value": "groupFormation"
-								}, {
-									"name": "position",
-									"value": "Vec3(5200,45,4700)"
-								}, {
-									"name": "formation",
-									"value": "initFormation"
-								}, {
-									"name": "fight",
-									"value": "false"
-								}, {
-									"name": "scriptName",
-									"value": "nota_majdaT_ctp2.moveCustomGroupAllArrived"
-								} ],
-								"scriptName": "nota_majdaT_ctp2.moveCustomGroupAllArrived"
-							}, {
-								"children": [],
-								"id": "L65LKCrqhgYielYyPt2CasRowsDMXcVr",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "groupDefintion",
-									"value": "groupFormation"
-								}, {
-									"name": "position",
-									"value": "endPos"
-								}, {
-									"name": "formation",
-									"value": "initFormation"
-								}, {
-									"name": "fight",
-									"value": "false"
-								}, {
-									"name": "scriptName",
-									"value": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot"
-								} ],
-								"scriptName": "nota_majdat_swampdota.moveCustomGroup_dynamically_swith_pivot"
-							} ],
-							"id": "tP8UxcOTd5183ZeuPKMX7AMuO4iXm1Qy",
-							"nodeType": "sequence",
-							"parameters": []
-						} ],
-						"id": "OY2RN4AV1B4XYWoY6GGd81mVuyTlL3yq",
-						"nodeType": "luaCondition",
+						"children": [],
+						"id": "lLAYtSKUvG1G9r0Zq92elAK1ZgWIvywI",
+						"nodeType": "reference",
 						"parameters": [ {
-							"name": "expression",
-							"value": "nota_majdat_swampdota.WaveTriggerCondition(strongPoint, waveTime, mlinfo)"
+							"name": "behaviourName",
+							"value": "nota_majdat_swampdota.Mavericks_aktiv"
+						} ],
+						"referenceInputs": [ {
+							"name": "mlinfo",
+							"value": "mlinfo"
 						}, {
-							"name": "repeat",
-							"value": "false"
-						} ]
+							"name": "endPos",
+							"value": "endPos"
+						} ],
+						"referenceOutputs": []
 					} ],
 					"id": "HkaLsEeELnLj2ALiDBGtJmO8hFdnRPlg",
 					"nodeType": "repeat",
