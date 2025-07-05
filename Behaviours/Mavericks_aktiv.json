@@ -266,7 +266,7 @@
 						"value": "mavericks"
 					}, {
 						"name": "value",
-						"value": "nota_majdat_swampdota.FindAllArmMavCloseToBattle(battlePosition+Vec3(400,0,-400), 2800)"
+						"value": "nota_majdat_swampdota.FindAllArmMavCloseToBattle(Vec3(5560, 0, 4560), 2800)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
@@ -526,7 +526,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#mavericks > 6"
+					"value": "#mavericks > 8"
 				}, {
 					"name": "repeat",
 					"value": "true"

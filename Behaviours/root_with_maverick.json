@@ -105,8 +105,8 @@
 			"height": 94,
 			"title": "nota_mestek_labs.collectMetal",
 			"width": 599,
-			"x": 1423,
-			"y": 868
+			"x": 1425,
+			"y": 952
 		},
 		"0ab3K9UXLele433tIFItjBjfmol8JSuq": {
 			"height": 94,
@@ -119,15 +119,22 @@
 			"height": 94,
 			"title": "store",
 			"width": 324,
-			"x": 1419,
-			"y": 1078
+			"x": 1420,
+			"y": 1117
 		},
 		"2W7vmLYLw0oSuZlRVawxU5usRLQalqRM": {
 			"height": 94,
 			"title": "store",
-			"width": 412,
-			"x": 1649,
-			"y": 1377
+			"width": 496,
+			"x": 1660,
+			"y": 1443
+		},
+		"30SHuTbU9cev5ZxkwbZ0AvI2bVc3kPBl": {
+			"height": 94,
+			"title": "store",
+			"width": 464,
+			"x": 1415,
+			"y": 806
 		},
 		"3kG3oXYWdJX5fQl6Zcyv7RN81VlZYOPU": {
 			"height": 151,
@@ -153,16 +160,16 @@
 		"7M94n9C0lsdJXnh3Q2ESpyAipNp16Mtl": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 277,
+			"width": 292,
 			"x": 1417,
-			"y": 1168
+			"y": 1194
 		},
 		"7XhO4bff7oOoRgOyCPXRUn6YjIFzqWoQ": {
 			"height": 110,
 			"title": "nota_majdat_swampdota.MoveSingleUnit",
 			"width": 412,
-			"x": 1660,
-			"y": 1466
+			"x": 1671,
+			"y": 1532
 		},
 		"8Jqt1EgyQrFdLwrh3gizMcXQOdUjvlTJ": {
 			"height": 72,
@@ -246,7 +253,7 @@
 			"title": "repeat",
 			"width": 131,
 			"x": 956,
-			"y": 1062
+			"y": 1088
 		},
 		"MB0a9qx8JSBtCvJrq2pdWhh3efYDnOjE": {
 			"height": 70,
@@ -323,7 +330,7 @@
 			"title": "reference",
 			"width": 340,
 			"x": 1887,
-			"y": 1126
+			"y": 1152
 		},
 		"XhGGyZT1bq1jEomO3bxvezfa8wmRRovz": {
 			"height": 60,
@@ -371,8 +378,8 @@
 			"height": 72,
 			"title": "wait_for_fark_exist",
 			"width": 201,
-			"x": 1440,
-			"y": 792
+			"x": 1425,
+			"y": 894
 		},
 		"hA6aPKowK7EppUFZEcZBqye4ehqPALeZ": {
 			"height": 60,
@@ -444,6 +451,13 @@
 			"x": 1036,
 			"y": 476
 		},
+		"nLpZmsdi7MWRK27aa8HWUHGW8y0IeOdz": {
+			"height": 94,
+			"title": "store",
+			"width": 464,
+			"x": 1670,
+			"y": 1364
+		},
 		"nMEHgGNBmq7ZeguDXs5xo66o9RqaRV9g": {
 			"height": 172,
 			"title": "reference",
@@ -462,15 +476,15 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1414,
-			"y": 1389
+			"x": 1425,
+			"y": 1455
 		},
 		"pHfgXR5BZ6qpf0rOI8qpSQF7h11Urnw6": {
 			"height": 94,
 			"title": "store",
 			"width": 213,
 			"x": 1423,
-			"y": 985
+			"y": 1035
 		},
 		"qv60QiBCFNbx8m4UGhVwmKOKzBrkd8sh": {
 			"height": 70,
@@ -519,7 +533,7 @@
 			"title": "sequence",
 			"width": 143,
 			"x": 1152,
-			"y": 1062
+			"y": 1088
 		},
 		"zMFuguKPaAgsD4rTmpTbJwZ9saou4sam": {
 			"height": 60,
@@ -771,6 +785,21 @@
 							} ]
 						}, {
 							"children": [],
+							"id": "30SHuTbU9cev5ZxkwbZ0AvI2bVc3kPBl",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "battlePos"
+							}, {
+								"name": "value",
+								"value": "nota_majdat_swampdota.FindBattle()"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
 							"id": "gvAKil1jBGXLfgEglT0x71ExHKfBhtmh",
 							"nodeType": "wait",
 							"parameters": [ {
@@ -786,7 +815,7 @@
 								"value": "{farkID}"
 							}, {
 								"name": "area",
-								"value": "nota_majdat_swampdota.StrongpointAreaSensor_FARK(mlinfo.goodStrongpoints)"
+								"value": "{center=battlePos + Vec3(-750,0,750), radius=1000}"
 							}, {
 								"name": "scriptName",
 								"value": "nota_mestek_labs.collectMetal"
@@ -854,7 +883,7 @@
 							"nodeType": "luaCondition",
 							"parameters": [ {
 								"name": "expression",
-								"value": "curMetal > mlinfo.buy[\"armmav\"]"
+								"value": "curMetal > (mlinfo.buy[\"armmav\"]+400)"
 							}, {
 								"name": "repeat",
 								"value": "false"
@@ -887,6 +916,21 @@
 						}, {
 							"children": [ {
 								"children": [],
+								"id": "nLpZmsdi7MWRK27aa8HWUHGW8y0IeOdz",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "battlePos1"
+								}, {
+									"name": "value",
+									"value": "nota_majdat_swampdota.FindBattle()"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
 								"id": "2W7vmLYLw0oSuZlRVawxU5usRLQalqRM",
 								"nodeType": "luaCommand",
 								"parameters": [ {
@@ -894,7 +938,7 @@
 									"value": "randomPos"
 								}, {
 									"name": "value",
-									"value": "nota_majdat_swampdota.RandomUniformPosition()"
+									"value": "nota_majdat_swampdota.RandomPositionNearBattle(battlePos1)"
 								}, {
 									"name": "scriptName",
 									"value": "store"

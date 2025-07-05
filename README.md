@@ -1,4 +1,4 @@
-nota_majdat_swampdota 9.0.0
+nota_majdat_swampdota 10.0.0
 ====
 
 * [dependencies](./dependencies.json)
@@ -163,6 +163,12 @@ Return static table, that define static position for unit types
 * RandomUnitPosition
 
 Returns uniform random position from static line (default values configured)
+
+
+* RandomPositionNearBattle
+
+Return random position for Maverick
+- argument: battlePos
 
 
 * WaveTrigegerCondition
